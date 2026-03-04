@@ -1,7 +1,11 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
 import "./global.css";
 import { Instrument_Serif, Manrope } from "next/font/google";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Zenin Charts",
+  description: "The coolest React chart components on the planet.",
+};
 export const manrope = Manrope({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
