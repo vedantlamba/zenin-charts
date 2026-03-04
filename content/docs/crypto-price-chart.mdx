@@ -1,12 +1,13 @@
 ---
 title: Crypto Price Chart
 description: A crypto price widget, real-time hover tracking, built for financial interfaces.
+image: /og/crypto-price-chart.avif
 ---
 
 import { CryptoPriceChart } from "@/components/charts/crypto-price-chart";
 import { cryptoChartData } from "@/components/charts/data/crypto-price-chart-data";
 
-<Card className="flex item-center justify-center py-20">
+<Card className="flex item-center justify-center md:py-16">
   <CryptoPriceChart
     title="Bitcoin"
     quantityOwned={2.66346}
@@ -18,12 +19,11 @@ import { cryptoChartData } from "@/components/charts/data/crypto-price-chart-dat
 
 ## Features
 
-- Interactive **time range tabs** (1H, 1D, 1W, 1M, 1Y, ALL)
-- Smooth **animated tab transitions**
-- **Hover price tracking**
-- Dynamic **percentage change indicator**
-- Gradient **area chart visualization**
-- Displays **low, high, and holdings value**
+- **Interactive time-range selection** with tabs for 1H, 1D, 1W, 1M, 1Y, and ALL.
+- **Real-time hover tracking** to inspect price values at any point on the chart.
+- **Built for React and Next.js applications**, making it easy to integrate into modern web interfaces.
+- **Powered by Recharts and Framer Motion** for reliable chart rendering and smooth animations.
+- **Key metrics overview** including today's low, today's high, and total holdings value.
 
 ---
 
@@ -426,7 +426,7 @@ isPositive ? "text-[#16C784]" : "text-red-400",
 
 ## Data Structure
 
-```ts title="cryto-chart-data.ts"
+```ts title="crypto-price-chart-data.ts"
 export type ChartDataPoint = {
   time: string;
   price: number;
@@ -520,7 +520,7 @@ export const cryptoChartData = {
 
 ## Usage
 
-```tsx title="Title"
+```tsx
 import { CryptoPriceChart } from "@/components/charts/crypto-price-chart";
 import { cryptoChartData } from "@/components/charts/data/crypto-price-chart-data";
 

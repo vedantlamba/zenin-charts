@@ -31,19 +31,30 @@ export const ZeninChartsLanding = () => {
           </p>
         </div>
         <div className="flex gap-2">
-          <Button className="cursor-pointer flex items-center justify-center text-xs md:text-sm">
-            <HugeiconsIcon icon={ArrowRight02Icon} />
-            Get Started
+          <Button
+            asChild
+            className="cursor-pointer flex items-center justify-center text-xs md:text-sm"
+          >
+            <Link href="/docs">
+              <HugeiconsIcon icon={ArrowRight02Icon} />
+              Get Started
+            </Link>
           </Button>
           <Button
+            asChild
             variant="outline"
             className="cursor-pointer flex items-center justify-center text-xs md:text-sm"
           >
-            <HugeiconsIcon
-              icon={StarIcon}
-              className="text-yellow-400 fill-amber-400 size-3"
-            />
-            Star Github
+            <Link
+              href="https://github.com/vedantlamba/zenin-charts"
+              target="_blank"
+            >
+              <HugeiconsIcon
+                icon={StarIcon}
+                className="text-yellow-400 fill-amber-400 size-4"
+              />
+              Star Github
+            </Link>
           </Button>
         </div>
       </div>
