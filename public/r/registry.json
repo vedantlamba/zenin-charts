@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "zenin-charts",
+  "homepage": "https://charts.zenin.design",
+  "items": [
+    {
+      "name": "crypto-price-chart",
+      "type": "registry:component",
+      "title": "Crypto Price Chart",
+      "description": "Interactive animated crypto price chart with tabs and holdings summary.",
+      "dependencies": [
+        "recharts",
+        "motion",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/default/ui/crypto-price-chart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

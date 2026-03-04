@@ -1,0 +1,79 @@
+---
+title: Crypto Price Chart
+description: A crypto price widget, real-time hover tracking, built for financial interfaces.
+---
+
+import { CryptoPriceChart } from "@/components/charts/crypto-price-chart";
+import { cryptoChartData } from "@/components/charts/data/crypto-price-chart-data";
+
+<Card className="flex item-center justify-center py-20">
+  <CryptoPriceChart
+    title="Bitcoin"
+    quantityOwned={2.66346}
+    chartData={cryptoChartData}
+  />
+</Card>
+
+---
+
+## Features
+
+- Interactive **time range tabs** (1H, 1D, 1W, 1M, 1Y, ALL)
+- Smooth **animated tab transitions**
+- **Hover price tracking**
+- Dynamic **percentage change indicator**
+- Gradient **area chart visualization**
+- Displays **low, high, and holdings value**
+
+---
+
+## Installation
+
+import { Step, Steps } from "fumadocs-ui/components/steps";
+
+<CodeTabs defaultValue="cli">
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn add @ncdai/shimmering-text
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>
+
+### Install dependencies
+
+```bash
+npm install clsx tailwind-merge
+```
+
+</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+---
+
+## Usage
+
+```tsx
+import { CryptoPriceChart } from "@/components/charts/crypto-price-chart";
+import { cryptoChartData } from "@/components/charts/data/crypto-price-chart-data";
+
+<CryptoPriceChart
+  title="Bitcoin"
+  quantityOwned={2.66346}
+  chartData={cryptoChartData}
+/>;
+```
