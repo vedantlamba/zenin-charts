@@ -19,6 +19,34 @@ export const ui: Registry["items"] = [
         path: "registry/default/ui/crypto-price-chart.tsx",
         type: "registry:component",
       },
+      {
+        path: "registry/default/ui/crypto-price-chart-data.ts",
+        type: "registry:component",
+      },
+    ],
+  },
+  {
+    name: "members-growth-chart",
+    type: "registry:component",
+    title: "Members Growth Chart",
+    description:
+      "Sleek analytics chart with tabbed segments and gradient area visualization.",
+    dependencies: [
+      "recharts",
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons",
+    ],
+    registryDependencies: [],
+    files: [
+      {
+        path: "registry/default/ui/members-growth-chart.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "registry/default/ui/members-growth-chart-data.ts",
+        type: "registry:component",
+      },
     ],
   },
 ];

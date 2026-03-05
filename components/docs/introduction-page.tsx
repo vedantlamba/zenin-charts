@@ -5,7 +5,9 @@ export const IntroductionPage = () => {
     <div className="space-y-12">
       <div className="space-y-6">
         <div>
-          <span className="text-muted-foreground text-lg">やあ、ようこそ。</span>
+          <span className="text-muted-foreground text-lg">
+            やあ、ようこそ。
+          </span>
           <h1 className="text-4xl font-semibold tracking-tight">
             Yaa, youkoso 🌸
           </h1>
@@ -14,8 +16,8 @@ export const IntroductionPage = () => {
 
       <div className="space-y-4 text-muted-foreground leading-7">
         <p>
-          Zenin Charts is a collection of beautifully animated chart
-          components built primarily with{" "}
+          Zenin Charts is a collection of beautifully animated chart components
+          built primarily with{" "}
           <span className="text-foreground font-medium">Next.js</span>,{" "}
           <span className="text-foreground font-medium">TailwindCSS</span>,{" "}
           <span className="text-foreground font-medium">TypeScript</span>,{" "}
@@ -50,11 +52,14 @@ export const IntroductionPage = () => {
 
         <p className="text-muted-foreground leading-7">
           I started building these charts while practicing my design and
-          frontend skills...
+          frontend skills. I took inspiration from Pinterest and redesigned
+          various chart concepts into code using my preferred stack.
         </p>
 
         <p className="text-muted-foreground leading-7">
-          Over time, I realized I had built a solid collection...
+          Over time, I realized I had built a solid collection of animated,
+          reusable chart components. Instead of keeping them private, I decided
+          to bundle them into a proper library and share them with the world.
         </p>
       </div>
 

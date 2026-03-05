@@ -14,6 +14,21 @@ export const Index: Record<string, any> = {
     files: [{
       path: "registry/default/ui/crypto-price-chart.tsx",
       type: "registry:component",
+    },{
+      path: "registry/default/ui/crypto-price-chart-data.ts",
+      type: "registry:component",
+    }],
+  },
+  "members-growth-chart": {
+    name: "members-growth-chart",
+    description: "Sleek analytics chart with tabbed segments and gradient area visualization.",
+    type: "registry:component",
+    files: [{
+      path: "registry/default/ui/members-growth-chart.tsx",
+      type: "registry:component",
+    },{
+      path: "registry/default/ui/members-growth-chart-data.ts",
+      type: "registry:component",
     }],
   },
 }

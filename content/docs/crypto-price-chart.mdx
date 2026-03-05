@@ -7,7 +7,7 @@ image: /og/crypto-price-chart.avif
 import { CryptoPriceChart } from "@/components/charts/crypto-price-chart";
 import { cryptoChartData } from "@/components/charts/data/crypto-price-chart-data";
 
-<Card className="flex item-center justify-center md:py-16">
+<Card className="flex item-center justify-center md:py-16 not-prose">
   <CryptoPriceChart
     title="Bitcoin"
     quantityOwned={2.66346}
@@ -427,6 +427,8 @@ isPositive ? "text-[#16C784]" : "text-red-400",
 ## Data Structure
 
 ```ts title="crypto-price-chart-data.ts"
+// The chart accepts price data grouped by time range (1H, 1D, 1W, etc.).
+
 export type ChartDataPoint = {
   time: string;
   price: number;
