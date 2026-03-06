@@ -31,4 +31,16 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
+  "momentum-chart": {
+    name: "momentum-chart",
+    description: "Displays a metric’s value, change, and trend to highlight momentum over time.",
+    type: "registry:component",
+    files: [{
+      path: "registry/default/ui/momentum-chart.tsx",
+      type: "registry:component",
+    },{
+      path: "registry/default/ui/dot-pattern.tsx",
+      type: "registry:component",
+    }],
+  },
 }

@@ -49,4 +49,28 @@ export const ui: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "momentum-chart",
+    type: "registry:component",
+    title: "Momentum Chart",
+    description:
+      "Displays a metric’s value, change, and trend to highlight momentum over time.",
+    dependencies: [
+      "recharts",
+      "motion",
+      "@hugeicons/react",
+      "@hugeicons/core-free-icons",
+    ],
+    registryDependencies: [],
+    files: [
+      {
+        path: "registry/default/ui/momentum-chart.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "registry/default/ui/dot-pattern.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
 ];
