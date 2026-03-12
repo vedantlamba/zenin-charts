@@ -177,7 +177,7 @@ const CustomToolTip = ({
   active,
   payload,
   label,
-}: TooltipContentProps<number, string>) => {
+}: TooltipContentProps) => {
   if (!active || !payload?.length || !label) return null;
   return (
     <div>
@@ -186,7 +186,7 @@ const CustomToolTip = ({
 
         return (
           <span
-            key={entry.dataKey}
+            key={String(entry.dataKey)}
             className="text-white rounded-sm px-1.5 py-0.5 bg-[#13b677] text-[11px] font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.6)] flex gap-1"
           >
             <span>{entry.payload.time}</span>

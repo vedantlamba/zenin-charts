@@ -140,12 +140,12 @@ const CustomToolTip = ({
   active,
   payload,
   label,
-}: TooltipContentProps<number, string>) => {
+}: TooltipContentProps) => {
   if (!active || !payload?.length || !label) return null;
   return (
     <div className="bg-linear-to-b from-neutral-900 to-neutral-800 text-white text-xs px-2 py-1 rounded-full">
       {payload.map((entry) => {
-        return <span key={entry.dataKey}>{entry.value}</span>;
+        return <span key={String(entry.dataKey)}>{entry.value}</span>;
       })}
     </div>
   );

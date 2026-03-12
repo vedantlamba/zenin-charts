@@ -89,15 +89,8 @@ import {
 } from "recharts";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
-
+import { MembersGrowthData, TabKey } from "./members-growth-chart-data";
 import { useId } from "react";
-
-export type MembersGrowthData = {
-  month: string;
-  members: number;
-};
-
-export type TabKey = "All" | "Active" | "Enrolled";
 
 type MembersGrowthChartProps = {
   data: Record<TabKey, MembersGrowthData[]>;
@@ -113,7 +106,7 @@ export const MembersGrowthChart = ({
   avatar,
 }: MembersGrowthChartProps) => {
   const tabs = Object.keys(data) as TabKey[];
-  const [active, setActive] = useState<TabKey>(tabs[2]);
+  const [active, setActive] = useState<TabKey>(tabs[0]);
 
   const currentData = data[active];
   const totalMembers = currentData.reduce((sum, item) => sum + item.members, 0);
@@ -222,16 +215,12 @@ export const MembersGrowthChart = ({
   );
 };
 
-const CustomToolTip = ({
-  active,
-  payload,
-  label,
-}: TooltipContentProps<number, string>) => {
+const CustomToolTip = ({ active, payload, label }: TooltipContentProps) => {
   if (!active || !payload?.length || !label) return null;
   return (
     <div className="bg-linear-to-b from-neutral-900 to-neutral-800 text-white text-xs px-2 py-1 rounded-full">
       {payload.map((entry) => {
-        return <span key={entry.dataKey}>{entry.value}</span>;
+        return <span key={String(entry.dataKey)}>{entry.value}</span>;
       })}
     </div>
   );
@@ -367,7 +356,7 @@ const CardText = () => {
 ## Data Structure
 
 ```ts title="members-growth-chart-data.ts"
-// The chart expects data grouped by tab categories. 
+// The chart expects data grouped by tab categories.
 // Each entry represents the number of members for a specific month.
 
 export type MembersGrowthData = {
