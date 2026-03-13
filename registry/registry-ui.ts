@@ -73,4 +73,19 @@ export const ui: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "revenue-trends",
+    type: "registry:component",
+    title: "Revenue Trends Chart",
+    description:
+      "Displays monthly revenue trends by comparing profit and loss over time.",
+    dependencies: ["recharts"],
+    registryDependencies: [],
+    files: [
+      {
+        path: "registry/default/ui/revenue-trends.tsx",
+        type: "registry:component",
+      },
+    ],
+  },
 ];

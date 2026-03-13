@@ -43,4 +43,13 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
+  "revenue-trends": {
+    name: "revenue-trends",
+    description: "Displays monthly revenue trends by comparing profit and loss over time.",
+    type: "registry:component",
+    files: [{
+      path: "registry/default/ui/revenue-trends.tsx",
+      type: "registry:component",
+    }],
+  },
 }

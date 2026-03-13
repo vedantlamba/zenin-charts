@@ -11,6 +11,7 @@ import Link from "next/link";
 import { instrumentSerif } from "@/app/layout";
 import { CryptoPriceChart } from "../charts/crypto-price-chart";
 import { cryptoChartData } from "../charts/data/crypto-price-chart-data";
+import { RevenueTrends } from "../charts/revenue-trends";
 
 export const ZeninChartsLanding = () => {
   return (
@@ -70,8 +71,9 @@ export const ZeninChartsLanding = () => {
           <div className="hidden lg:block lg:absolute top-0 right-40 z-5">
             {/* <MomentumCard /> */}
           </div>
-          <div className="hidden lg:block lg:absolute top-1.5 left-70 z-5">
+          <div className="hidden lg:block lg:absolute top-0 left-60 z-5">
             {/* <MembersGrowthChart /> */}
+            {/* <RevenueTrends/> */}
           </div>
         </div>
         <div className="text-center">
