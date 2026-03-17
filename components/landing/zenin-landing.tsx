@@ -12,6 +12,7 @@ import { instrumentSerif } from "@/app/layout";
 import { CryptoPriceChart } from "../charts/crypto-price-chart";
 import { cryptoChartData } from "../charts/data/crypto-price-chart-data";
 import { RevenueTrends } from "../charts/revenue-trends";
+import { WellnessChart } from "../charts/wellness-chart";
 
 export const ZeninChartsLanding = () => {
   return (
@@ -24,7 +25,7 @@ export const ZeninChartsLanding = () => {
           <h1
             className={`${instrumentSerif.className} text-5xl md:text-6xl font-semibold tracking-tight`}
           >
-            <span className="text-[#1B3A2E] dark:text-[#FFB7C5]">Zenin</span>{" "}
+            <span className="text-[#1B3A2E] dark:text-[#FF5A5A]">Zenin</span>{" "}
             Charts
           </h1>
           <p className="text-balance text-neutral-600 dark:text-neutral-200 text-xs md:text-[15px] font-semibold">
@@ -68,12 +69,11 @@ export const ZeninChartsLanding = () => {
               chartData={cryptoChartData}
             />
           </div>
-          <div className="hidden lg:block lg:absolute top-0 right-40 z-5">
-            {/* <MomentumCard /> */}
+          <div className="hidden lg:block lg:absolute top-0 right-55 z-5">
+            <WellnessChart />
           </div>
           <div className="hidden lg:block lg:absolute top-0 left-60 z-5">
-            {/* <MembersGrowthChart /> */}
-            {/* <RevenueTrends/> */}
+            <RevenueTrends />
           </div>
         </div>
         <div className="text-center">
