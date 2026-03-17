@@ -1,6 +1,8 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
 import "./global.css";
 import { Instrument_Serif, Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Zenin Charts",
@@ -20,6 +22,7 @@ export default function Layout({ children }: LayoutProps<"/">) {
     <html lang="en" className={manrope.className} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
         <RootProvider>{children}</RootProvider>
+        <Analytics />
       </body>
     </html>
   );
