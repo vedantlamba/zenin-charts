@@ -1,45 +1,96 @@
-# zenin-charts
+# Zenin Charts
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+<p align="center">
+  The coolest React chart components on the planet.
+</p>
 
-Run development server:
+<p align="center">
+  <img src="./public/zenincharts.avif" alt="Zenin Charts Preview" />
+</p>
+
+---
+
+## ✨ Overview
+
+**Zenin Charts** is a modern React chart component library designed to build **interactive and beautiful data visualizations** in web applications.
+
+It provides prebuilt, customizable chart components that developers can easily integrate into their projects — with a strong focus on **design, usability, and smooth interactions**. :contentReference[oaicite:0]{index=0}
+
+---
+
+## 🔥 Why Zenin Charts?
+
+- ⚡ Plug-and-play React components
+- 🎨 Beautiful, modern UI (dark + light ready)
+- 📊 Built for real-world dashboards & products
+- 🧩 Easy integration into existing apps
+- 🧠 Developer-first experience
+
+---
+
+## 🧱 What You Get
+
+- Interactive chart components
+- Financial-style UI examples
+- Clean and reusable component architecture
+- Documentation for quick setup
+- Open-source flexibility
+
+---
+
+## 🎯 Target Developers
+
+Zenin Charts is built for:
+
+- React Developers
+- Frontend Engineers
+- Teams building dashboards, SaaS, or analytics tools
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- TypeScript
+- Modern UI/UX principles
+- Component-driven architecture
+
+---
+
+## 🚀 Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-pnpm dev
-# or
-yarn dev
 ```
 
-Open http://localhost:3000 with your browser to see the result.
+---
 
-## Explore
+## 💡 Example Use Cases
 
-In the project, you can see:
+- Admin dashboards
+- Financial tracking apps
+- Analytics platforms
+- SaaS products
+- Personal projects
 
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `lib/layout.shared.tsx`: Shared options for layouts, optional but preferred to keep.
+---
 
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
+## ❤️ Support the Project
 
-### Fumadocs MDX
+### If Zenin Charts helps you, consider supporting the project:
 
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
+<p align="left">
+  <a href="https://buymeacoffee.com/vedantlamba">
+    ☕ Support via Buy Me a Coffee
+  </a>
+</p>
 
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
+---
 
-## Learn More
+## 📜 License
 
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
+This project is open-source.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.dev) - learn about Fumadocs
+You can use, modify, and distribute it under the terms of the **MIT License**.
