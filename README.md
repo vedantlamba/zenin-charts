@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./public/zenincharts.png" alt="Zenin Charts Preview" />
+  <img src="public/preview/zenincharts.png" alt="Zenin Charts Preview" />
 </p>
 
 ---
